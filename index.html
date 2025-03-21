@@ -11,12 +11,6 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Mínimo el alto de la pantalla */
-        }
-        main {
-        flex: 1; /* Hace que el contenido principal ocupe el espacio disponible */
         }
         header {
             background: #333;
@@ -24,14 +18,17 @@
             padding: 20px;
             text-align: center;
         }
+        nav {
+            background: #444;
+        }
         nav ul {
             list-style: none;
             padding: 0;
             text-align: center;
-            background: #444;
+            margin: 0;
         }
         nav ul li {
-            display: inline;
+            display: inline-block;
             margin: 10px;
         }
         nav ul li a {
@@ -52,9 +49,9 @@
             padding: 10px;
             background: #333;
             color: white;
-            position: relative;
             width: 100%;
-            margin-top: auto; /* Empuja el footer al fondo si hay poco contenido */
+            position: relative;
+            bottom: 0;
         }
     </style>
 </head>
@@ -77,8 +74,8 @@
     
     <section id="educacion">
         <h2>Educación</h2>
-        <p>Maestría en Ciencia de Datos - USFQ (2024)</p>
-        <p>Ingeniería en Electrónica y Telecomunicaciones - ESPE (2018)</p>
+        <p><strong>Maestría en Ciencia de Datos</strong> - USFQ (2024)</p>
+        <p><strong>Ingeniería en Electrónica y Telecomunicaciones</strong> - ESPE (2018)</p>
     </section>
     
     <section id="experiencia">
@@ -92,32 +89,53 @@
     
     <section id="certificaciones">
         <h2>Certificaciones</h2>
-        <p>MikroTik Certified Network Associate (MTCNA) - 2021</p>
-        <p>Cisco Certified Network Associate (CCNA) - 2020</p>
-        <p>Seguridad de Redes Profesional NSE 4 - 2018</p>
+        <ul>
+            <li>MikroTik Certified Network Associate (MTCNA) - 2021</li>
+            <li>Cisco Certified Network Associate (CCNA) - 2020</li>
+            <li>Seguridad de Redes Profesional NSE 4 - 2018</li>
+        </ul>
     </section>
     
     <section id="habilidades">
         <h2>Habilidades</h2>
-        <p><strong>Ciencia de Datos:</strong> Python, SQL, TensorFlow, PyTorch, Apache Airflow, MLflow.</p>
-        <p><strong>Redes y Telecomunicaciones:</strong> DWDM, MPLS, 5G, redes de fibra óptica.</p>
-        <p><strong>DevOps y Nube:</strong> Docker, Kubernetes, AWS, Google Cloud.</p>
+        <ul>
+            <li><strong>Ciencia de Datos:</strong> Python, SQL, TensorFlow, PyTorch, Apache Airflow, MLflow.</li>
+            <li><strong>Redes y Telecomunicaciones:</strong> DWDM, MPLS, 5G, redes de fibra óptica.</li>
+            <li><strong>DevOps y Nube:</strong> Docker, Kubernetes, AWS, Google Cloud.</li>
+        </ul>
     </section>
     
     <section id="publicaciones">
         <h2>Publicaciones</h2>
-        <p><a href="https://ieeexplore.ieee.org/document/8399269">Receptor ISDB-Tb parcial implementado en una plataforma de radio definida por software (IEEE, 2018)</a></p>
+        <p>
+            <a href="https://ieeexplore.ieee.org/document/8399269" target="_blank" rel="noopener noreferrer">
+                Receptor ISDB-Tb parcial implementado en una plataforma de radio definida por software (IEEE, 2018)
+            </a>
+        </p>
     </section>
     
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>Email: <a href="mailto:garzonjordy@hotmail.com">garzonjordy@hotmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/jordy-garz%C3%B3n-778871ab/">Perfil LinkedIn</a></p>
-        <p>GitHub: <a href="https://github.com/Jordyggg">Jordyggg</a></p>
+        <ul>
+            <li>Email: <a href="mailto:garzonjordy@hotmail.com">garzonjordy@hotmail.com</a></li>
+            <li>LinkedIn: 
+                <a href="https://www.linkedin.com/in/jordy-garz%C3%B3n-778871ab/" target="_blank" rel="noopener noreferrer">
+                    Perfil LinkedIn
+                </a>
+            </li>
+            <li>GitHub: 
+                <a href="https://github.com/Jordyggg" target="_blank" rel="noopener noreferrer">
+                    Jordyggg
+                </a>
+            </li>
+        </ul>
     </section>
     
     <footer>
         <p>&copy; 2025 Jordy Garzón</p>
     </footer>
+</body>
+</html>
+
 </body>
 </html>
